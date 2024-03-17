@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Geist";
+	src: url("/src/assets/fonts/Geist-Medium.otf");
+}
+
+@layer components {
+	.social-link {
+		@apply flex gap-2 md:gap-3 items-center hover:bg-[hsl(0,0%,29%)] px-3 py-2 rounded-[.32rem];
+	}
+}
+
+::selection {
+	background: #fff;
+	color: #000;
+}
+
+::-moz-selection {
+	background: #fff;
+	color: #000;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
