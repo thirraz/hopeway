@@ -34,6 +34,7 @@ export default function EmailForm() {
 			>
 				<div className="flex flex-col gap-3 md:flex-row ">
 					<input
+						required
 						type="text"
 						name="from_name"
 						placeholder="YOUR NAME"
@@ -41,6 +42,7 @@ export default function EmailForm() {
 					/>
 
 					<input
+						required
 						type="email"
 						name="from_email"
 						placeholder="YOUR E-MAIL"
@@ -49,6 +51,7 @@ export default function EmailForm() {
 				</div>
 
 				<textarea
+					required
 					name="message"
 					placeholder="MESSAGE"
 					className="px-4 py-4 min-h-56 bg-black text-white border-[1px] border-white text-lg rounded-2xl outline-none"

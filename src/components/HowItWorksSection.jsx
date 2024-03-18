@@ -26,18 +26,6 @@ const stepsData = [
 ]
 
 export default function HowItWorksSection() {
-	// const item = {
-	// 	hidden: { y: 100 },
-	// 	show: index => ({
-	// 		y: 0,
-	// 		transition: {
-	// 			delay: 0.3 * index,
-	// 			duration: 1,
-	// 			ease: [0.6, 0.01, -0.05, 0.95]
-	// 		}
-	// 	})
-	// }
-
 	return (
 		<section className="max-w-[100dvw] flex flex-col gap-24 px-4 md:px-0">
 			<div className="flex gap-4">
