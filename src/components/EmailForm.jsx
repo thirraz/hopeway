@@ -26,7 +26,7 @@ export default function EmailForm() {
 				},
 				error => {
 					toast.error("Some error occurred, please try later...")
-					console.log(error.text)
+					console.log("Error => ", error.text)
 				}
 			)
 	}
