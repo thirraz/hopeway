@@ -27,11 +27,7 @@ const projectsData = [
 
 export default function Projects({ scrollYProgress }) {
 	return (
-		<motion.section
-			className="max-w-[100dvw] grid grid-rows-projects 
-			gap-36  justify-items-center lg:justify-items-start items-stretch 
-			md:justify-items-start"
-		>
+		<motion.section className="max-w-[100dvw] grid grid-rows-projects gap-36  justify-items-center lg:justify-items-start items-stretch md:justify-items-start">
 			{projectsData.map(
 				({ projectCover, projectDescription, projectName, link }, i) =>
 					i == 1 ? (

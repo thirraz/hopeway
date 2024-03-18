@@ -39,7 +39,7 @@ export default function HowItWorksSection() {
 	// }
 
 	return (
-		<section className="max-w-[100dvw] flex flex-col gap-24 px-4 ">
+		<section className="max-w-[100dvw] flex flex-col gap-24 px-4 md:px-0">
 			<div className="flex gap-4">
 				<Subheading />
 			</div>

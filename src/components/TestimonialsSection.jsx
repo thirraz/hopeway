@@ -32,16 +32,16 @@ export default function TestimonialsSection() {
 				animate={isInView ? "visible" : null}
 				className="text-3xl text-white min-h-screen grid grid-rows-projects gap-8"
 			>
-				<div className="px-4 max-w-[100dvw] flex flex-col lg:flex-row gap-8">
+				<div className="max-w-[100dvw] flex flex-col lg:flex-row gap-8">
 					<Testimonial />
 					<EmptyTestimonial />
 				</div>
-				<div className="px-4 max-w-[100dvw] flex flex-col lg:flex-row gap-8 md:justify-self-end">
+				<div className="max-w-[100dvw] flex flex-col lg:flex-row gap-8 md:justify-self-end">
 					<EmptyTestimonial />
 					<EmptyTestimonial />
 				</div>
 				{innerWidth > 960 && (
-					<div className="px-4 max-w-[100dvw] flex flex-col lg:flex-row gap-8">
+					<div className="max-w-[100dvw] flex flex-col lg:flex-row gap-8">
 						<EmptyTestimonial />
 						<EmptyTestimonial />
 					</div>
