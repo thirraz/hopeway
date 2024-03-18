@@ -13,6 +13,7 @@ export default function App() {
 		setScrollProgressState(lat)
 	)
 
+	console.log("teste")
 	return (
 		<div className="min-h-[200dvh] bg-black">
 			<HeroSection
