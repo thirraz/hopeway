@@ -7,6 +7,7 @@ export default function ProjectInfos({
 	projectName,
 	projectDescription,
 	justifyEnd,
+	link,
 	rowReverse,
 	btnSelfStart,
 	custom,
@@ -50,7 +51,7 @@ export default function ProjectInfos({
 						{projectDescription}
 					</p>
 				</div>
-				<ProjectButton selfStart={btnSelfStart} />
+				<ProjectButton selfStart={btnSelfStart} siteLink={link} />
 			</div>
 		</motion.div>
 	)

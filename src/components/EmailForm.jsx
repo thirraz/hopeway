@@ -24,8 +24,9 @@ export default function EmailForm() {
 				() => {
 					toast.success("MESSAGE SENT!")
 				},
-				() => {
+				error => {
 					toast.error("Some error occurred, please try later...")
+					console.log(error.text)
 				}
 			)
 	}

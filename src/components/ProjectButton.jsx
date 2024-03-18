@@ -1,9 +1,10 @@
 import { GoLinkExternal } from "react-icons/go"
 
-export default function ProjectButton({ selfStart }) {
+export default function ProjectButton({ siteLink, selfStart }) {
 	return (
 		<a
-			href="#"
+			href={siteLink}
+			target="_blank"
 			className={`
 			flex justify-center items-center
 			 gap-2 px-8 py-2 bg-white font-semibold text-black
