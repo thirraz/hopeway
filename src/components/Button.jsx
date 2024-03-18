@@ -1,6 +1,8 @@
 export default function Button() {
 	return (
-		<button
+		<a
+			href="https://cal.com/thirraz/30min"
+			target="_blank"
 			className="
 		px-14 py-2 mt-2 bg-white border-[1px]
 		 border-white font-bold text-black
@@ -9,6 +11,6 @@ export default function Button() {
 			max-w-fit"
 		>
 			Book Call
-		</button>
+		</a>
 	)
 }

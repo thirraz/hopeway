@@ -19,7 +19,7 @@ export default function Testimonial() {
 					<MdStar className="fill-yellow-400 w-4" />
 				</div>
 			</div>
-			<p className="text-[16px] leading-normal">
+			<p className="text-[16px] text-stone-400 leading-normal">
 				I’m a layman in programming and had a problem. HopeWay solved this
 				demand very well. It was polite, helpful and competent. Made all the
 				necessary adjustments for a good delivery. Kept the communication
