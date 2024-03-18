@@ -10,7 +10,7 @@ export default function Button() {
 			transform hover:translate-y-[-4px] transition-all 
 			max-w-fit"
 		>
-			Book Call
+			Book a Call
 		</a>
 	)
 }
