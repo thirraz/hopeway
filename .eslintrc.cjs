@@ -17,6 +17,8 @@ module.exports = {
 			"warn",
 			{ allowConstantExport: true }
 		],
-		"react/prop-types": "off"
+		"react/prop-types": "off",
+		"no-mixed-spaces-and-tabs": "off",
+		"no-undef": "off"
 	}
 }

@@ -1,5 +1,4 @@
-import { motion } from "framer-motion"
-import { IoCheckmarkCircleOutline } from "react-icons/io5"
+import { toast } from "react-hot-toast"
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 
@@ -13,15 +12,20 @@ export default function EmailForm() {
 			 e depois colocar no .gitignore		
 		*/
 		emailjs
-			.sendForm("service_64t9ufi", "template_s7nogod", form.current, {
-				publicKey: "Lv9Rs2o_ZJifIXVwY"
-			})
+			.sendForm(
+				import.meta.env.VITE_EMAIL_JS_SERVICE_KEY,
+				import.meta.env.VITE_EMAIL_JS_TEMPLATE_KEY,
+				form.current,
+				{
+					publicKey: import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
+				}
+			)
 			.then(
 				() => {
-					console.log("SUCCESS!")
+					toast.success("MESSAGE SENT!")
 				},
-				error => {
-					console.log("FAILED...", error.text)
+				() => {
+					toast.error("Some error occurred, please try later...")
 				}
 			)
 	}
@@ -30,8 +34,7 @@ export default function EmailForm() {
 		<>
 			<form
 				ref={form}
-				// onSubmit={sendEmail}
-				onSubmit={() => console.log("test")}
+				onSubmit={sendEmail}
 				className="relative flex flex-col gap-5 w-full md:w-fit"
 			>
 				<div className="flex flex-col gap-3 md:flex-row ">
@@ -59,16 +62,23 @@ export default function EmailForm() {
 				<button className="absolute bottom-0 right-0 md:bottom-0 md:left-[-125px] bg-white max-w-fit font-bold uppercase text-sm md:text-base py-7 px-3 px md:py-9 md:px-5 rounded-full rotate-[-15deg] active:border-[1px] border-white active:bg-black active:text-white hover:bg-slate-300 transform hover:translate-y-[-5px] transition-transform">
 					Send <br /> Message
 				</button>
-				<motion.div
+				{/* <motion.div
 					initial={{ translateX: "150%" }}
-					animate={{ translateX: "0%", transition: { duration: 10 } }}
-					className="py-3 px-4 bg-green-200 text-black uppercase font-bold rounded-lg absolute bottom-0 right-0 flex gap-4 items-center"
+					animate={
+						test
+							? {
+									translateX: ,
+									transition: { duration: 0.8, ease: "anticipate" }
+							  }
+							: null
+					}
+					className="py-3 px-4 bg-green-200 text-black uppercase font-bold rounded-lg absolute bottom-2 right-0 flex gap-4 items-center"
 				>
 					<span>
 						<IoCheckmarkCircleOutline className="w-7 h-7" />
 					</span>
 					<p>Message sent</p>
-				</motion.div>
+				</motion.div> */}
 			</form>
 		</>
 	)
