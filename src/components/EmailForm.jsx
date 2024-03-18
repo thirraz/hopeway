@@ -1,8 +1,13 @@
 import { toast } from "react-hot-toast"
 import { useRef } from "react"
+import { apiInfos } from "../../apiInfos"
 import emailjs from "@emailjs/browser"
 
+const { publicKey, serviceKey, templateKey } = apiInfos
+
 export default function EmailForm() {
+	console.log(publicKey === "string")
+
 	const form = useRef()
 
 	function sendEmail(e) {
@@ -12,14 +17,9 @@ export default function EmailForm() {
 			 e depois colocar no .gitignore		
 		*/
 		emailjs
-			.sendForm(
-				import.meta.env.VITE_EMAIL_JS_SERVICE_KEY,
-				import.meta.env.VITE_EMAIL_JS_TEMPLATE_KEY,
-				form.current,
-				{
-					publicKey: import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
-				}
-			)
+			.sendForm(serviceKey, templateKey, form.current, {
+				publicKey: publicKey
+			})
 			.then(
 				() => {
 					toast.success("MESSAGE SENT!")
