@@ -6,16 +6,11 @@ import emailjs from "@emailjs/browser"
 const { publicKey, serviceKey, templateKey } = apiInfos
 
 export default function EmailForm() {
-	console.log(publicKey === "string")
-
 	const form = useRef()
 
 	function sendEmail(e) {
 		e.preventDefault()
 
-		/* passar as informações importantes para um novo arquivo,
-			 e depois colocar no .gitignore		
-		*/
 		emailjs
 			.sendForm(serviceKey, templateKey, form.current, {
 				publicKey: publicKey
@@ -24,9 +19,8 @@ export default function EmailForm() {
 				() => {
 					toast.success("MESSAGE SENT!")
 				},
-				error => {
+				() => {
 					toast.error("Some error occurred, please try later...")
-					console.log("Error => ", error.text)
 				}
 			)
 	}
