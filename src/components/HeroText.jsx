@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import Button from "./Button"
+import CTA from "./CTA"
 
 export default function HeroText({ opacity }) {
 	return (
@@ -8,14 +8,14 @@ export default function HeroText({ opacity }) {
 			style={{ opacity }}
 		>
 			<h1 className="text-[clamp(2rem,5vw,4rem)] font-semibold md:leading-[3rem] lg:leading-[4.2rem] ">
-				Increase Your Results <br />
-				With HopeWay
+				Aumente seus resultados <br />
+				Com a HopeWay
 			</h1>
 			<p className="font-thin max-w-[70%] mb-4 md:mb-0">
-				HopeWay provides the design, the text that will make you sell more,
-				and the code. Everything with a good price!
+				A HopeWay fornece o design, o texto que fará você vender mais, e o
+				código. Tudo por um ótimo preço!
 			</p>
-			<Button text="Book a Call" />
+			<CTA />
 		</motion.div>
 	)
 }

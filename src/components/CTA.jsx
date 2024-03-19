@@ -1,4 +1,4 @@
-export default function Button() {
+export default function CTA() {
 	return (
 		<a
 			href="https://cal.com/thirraz/30min"
@@ -10,7 +10,7 @@ export default function Button() {
 			transform hover:translate-y-[-4px] transition-all 
 			max-w-fit"
 		>
-			Book a Call
+			Marcar uma reunião 
 		</a>
 	)
 }

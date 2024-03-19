@@ -12,7 +12,7 @@ export default function ProjectButton({ siteLink, selfStart }) {
 			 transform hover:translate-y-[-3px] transition-all self-center 
 			 max-w-fit ${selfStart ? "lg:self-start" : "lg:self-end"}`}
 		>
-			See live site here{" "}
+			Visitar site{" "}
 			<span>
 				<GoLinkExternal />
 			</span>

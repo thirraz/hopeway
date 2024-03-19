@@ -17,10 +17,12 @@ export default function EmailForm() {
 			})
 			.then(
 				() => {
-					toast.success("MESSAGE SENT!")
+					toast.success("MESSAGEM ENVIADA!")
 				},
 				() => {
-					toast.error("Some error occurred, please try later...")
+					toast.error(
+						"Ocorreu um erro... Caso persista, tente me contactar pelas redes sociais :)"
+					)
 				}
 			)
 	}
@@ -37,7 +39,7 @@ export default function EmailForm() {
 						required
 						type="text"
 						name="from_name"
-						placeholder="YOUR NAME"
+						placeholder="SEU NOME"
 						className="px-4 py-4 w-full bg-black text-white border-[1px] border-white text-lg rounded-[200px]  outline-none"
 					/>
 
@@ -45,7 +47,7 @@ export default function EmailForm() {
 						required
 						type="email"
 						name="from_email"
-						placeholder="YOUR E-MAIL"
+						placeholder="SEU E-MAIL"
 						className="px-4 py-4 w-full bg-black text-white border-[1px] border-white text-lg rounded-[200px] outline-none"
 					/>
 				</div>
@@ -53,30 +55,13 @@ export default function EmailForm() {
 				<textarea
 					required
 					name="message"
-					placeholder="MESSAGE"
+					placeholder="MENSAGEM"
 					className="px-4 py-4 min-h-56 bg-black text-white border-[1px] border-white text-lg rounded-2xl outline-none"
 				/>
 
-				<button className="absolute bottom-0 right-0 md:bottom-0 md:left-[-125px] bg-white max-w-fit font-bold uppercase text-sm md:text-base py-7 px-3 px md:py-9 md:px-5 rounded-full rotate-[-15deg] active:border-[1px] border-white active:bg-black active:text-white hover:bg-slate-300 transform hover:translate-y-[-5px] transition-transform">
-					Send <br /> Message
+				<button className="absolute bottom-0 right-0 md:bottom-0 md:left-[-140px] bg-white max-w-fit font-bold uppercase text-sm md:text-base py-9 px-[.9rem] px md:py-11 md:px-5 rounded-full rotate-[-15deg] active:border-[1px] border-white active:bg-black active:text-white hover:bg-slate-300 transform hover:translate-y-[-5px] transition-transform">
+					Enviar <br /> Mensagem
 				</button>
-				{/* <motion.div
-					initial={{ translateX: "150%" }}
-					animate={
-						test
-							? {
-									translateX: ,
-									transition: { duration: 0.8, ease: "anticipate" }
-							  }
-							: null
-					}
-					className="py-3 px-4 bg-green-200 text-black uppercase font-bold rounded-lg absolute bottom-2 right-0 flex gap-4 items-center"
-				>
-					<span>
-						<IoCheckmarkCircleOutline className="w-7 h-7" />
-					</span>
-					<p>Message sent</p>
-				</motion.div> */}
 			</form>
 		</>
 	)

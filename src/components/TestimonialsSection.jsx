@@ -20,10 +20,9 @@ export default function TestimonialsSection() {
 	}
 
 	return (
-		<motion.div className="max-w-[100dvw] flex flex-col gap-[5rem] items-center md:items-stretch">
+		<motion.div className="px-4 md:px-0 max-w-[100dvw] flex flex-col gap-[5rem] items-center md:items-stretch">
 			<h2 className="text-white text-center text-[clamp(1.2rem,2vw,3rem)] font-semibold">
-				We do not have many clients yet 😑, but you can help us to complete
-				them 😉
+				Nós não temos muitos clientes ainda 😑, mas estamos crescendo 😉
 			</h2>
 			<motion.section
 				ref={ref}

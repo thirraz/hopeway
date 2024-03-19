@@ -6,21 +6,21 @@ const projectsData = [
 		projectCover: "/huge_bobcat.jpg",
 		projectName: "Huge Bobcat",
 		projectDescription:
-			"A streaming service with a HUGE amount of movies, with a great price. Don't waste more time spending so much to see bad movies anymore.",
+			"Uma plataforma de streaming com uma ENORME quantidade de filmes, por um preço acessível. Não perca mais dinheiro, assine Huge Bobcat!",
 		link: "https://huge-bobcat.vercel.app/"
 	},
 	{
 		projectCover: "/desert_global.png",
 		projectName: "Desert Global",
 		projectDescription:
-			"Do you want auto tools, pieces to improve or fix your car? Desert Global can provide this to you!",
+			"Você precisa de peças para o seu carro, ou alguma ferramenta para consertá-lo? A Desert Global tem isso e muito mais!",
 		link: "https://fantastic-longma-18b9b1.netlify.app/"
 	},
 	{
 		projectCover: "/nexter.jpg",
 		projectName: "Nexter",
 		projectDescription:
-			"You deserve a comfortable house, with beautiful views and in a good neighborhood. Nexter will make you happier!",
+			"Você merece uma casa confortável, com uma bela vista, e em uma boa vizinhança. A Nexter pode lhe dar isso!",
 		link: "https://lovely-quokka-749147.netlify.app/"
 	}
 ]

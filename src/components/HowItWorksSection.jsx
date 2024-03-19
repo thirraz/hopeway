@@ -8,20 +8,20 @@ import ContactsContainer from "./ContactsContainer"
 const stepsData = [
 	{
 		stepNumber: 1,
-		stepName: "Market Research",
+		stepName: "Pesquisa de mercado",
 		stepProcess:
-			"We will analyse your market, understand your competition, and discover customer needs."
+			"Vamos entender a competição e descobrir o que os clientes procuram."
 	},
 	{
 		stepNumber: 2,
-		stepName: "Design & Develop",
+		stepName: "O trabalho começa aqui",
 		stepProcess:
-			"The creation of your website that will make your brand stand out."
+			"Trata-se da criação do site que o fará se destacar na sua área."
 	},
 	{
 		stepNumber: 3,
-		stepName: "Launch",
-		stepProcess: "Get your site live and make your business standout!"
+		stepName: "Lançamento do site",
+		stepProcess: "O site ficará online, e aberto para novos clientes!"
 	}
 ]
 
