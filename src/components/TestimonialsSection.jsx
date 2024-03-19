@@ -20,7 +20,7 @@ export default function TestimonialsSection() {
 	}
 
 	return (
-		<motion.div className="px-4 md:px-0 max-w-[100dvw] flex flex-col gap-[5rem] items-center md:items-stretch">
+		<div className="px-4 md:px-0 max-w-[100dvw] flex flex-col gap-[5rem] items-center md:items-stretch">
 			<h2 className="text-white text-center text-[clamp(1.2rem,2vw,3rem)] font-semibold">
 				Nós não temos muitos clientes ainda 😑, mas estamos crescendo 😉
 			</h2>
@@ -35,10 +35,12 @@ export default function TestimonialsSection() {
 					<Testimonial />
 					<EmptyTestimonial />
 				</div>
+
 				<div className="max-w-[100dvw] flex flex-col lg:flex-row gap-8 md:justify-self-end">
 					<EmptyTestimonial />
 					<EmptyTestimonial />
 				</div>
+
 				{innerWidth > 960 && (
 					<div className="max-w-[100dvw] flex flex-col lg:flex-row gap-8">
 						<EmptyTestimonial />
@@ -46,6 +48,6 @@ export default function TestimonialsSection() {
 					</div>
 				)}
 			</motion.section>
-		</motion.div>
+		</div>
 	)
 }
