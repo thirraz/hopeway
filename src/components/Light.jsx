@@ -1,6 +1,24 @@
+import { useRef } from "react"
+import { motion, useInView } from "framer-motion"
+
 export default function Light({ className }) {
+	const lightRef = useRef()
+	const isInView = useInView(lightRef, { once: true })
+
+	const lightVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: { duration: 1, delay: 1 }
+		}
+	}
+
 	return (
-		<svg
+		<motion.svg
+			ref={lightRef}
+			variants={lightVariants}
+			initial="hidden"
+			animate={isInView ? "visible" : null}
 			className={className}
 			width="1295"
 			height="828"
@@ -41,6 +59,6 @@ export default function Light({ className }) {
 					/>
 				</filter>
 			</defs>
-		</svg>
+		</motion.svg>
 	)
 }
