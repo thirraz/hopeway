@@ -31,10 +31,10 @@ export default function OurProcessContainer() {
 	return (
 		<section className="relative w-[100dvw] min-h-auto bg-black space-y-20">
 			<Light className="absolute top-[-30%] right-[-10%] md:top-[-50%] md:left-[-70%] lg:left-[-20%] z-40" />
-			<h2 className="text-[clamp(2rem,6vw,3rem)] text-white text-center font-bold uppercase">
+			<h2 className="relative z-50 text-[clamp(2rem,6vw,3rem)] text-white text-center font-bold uppercase">
 				Nós fazemos tudo! ✨
 			</h2>
-			<div className="w-full flex gap-8 flex-wrap items-center justify-center">
+			<div className="relative z-50w-full flex gap-8 flex-wrap items-center justify-center">
 				{processesData.map(({ src, icon, processName }, i) => (
 					<Process
 						imgSrc={src}
