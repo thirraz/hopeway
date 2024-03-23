@@ -48,7 +48,7 @@ export default function EmailForm() {
 						type="email"
 						name="from_email"
 						placeholder="SEU E-MAIL"
-						className="px-4 py-4 w-full bg-black text-white border-[1px] border-white text-lg rounded-[200px] outline-none"
+						className=" md:px-12 lg:px-16 py-4 w-full bg-black text-white border-[1px] border-white text-lg rounded-[200px] outline-none"
 					/>
 				</div>
 

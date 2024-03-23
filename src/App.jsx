@@ -15,7 +15,7 @@ export default function App() {
 
 	console.log("teste")
 	return (
-		<div className="min-h-[200dvh] bg-black">
+		<div className="min-h-[200dvh] ">
 			<HeroSection
 				scale={scale}
 				opacity={opacity}

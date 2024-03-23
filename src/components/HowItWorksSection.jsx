@@ -27,7 +27,7 @@ const stepsData = [
 
 export default function HowItWorksSection() {
 	return (
-		<section className="max-w-[100dvw] flex flex-col gap-10 md:gap-24 px-4 md:px-0">
+		<section className="max-w-[100dvw] flex flex-col gap-10 md:gap-24  md:px-12 lg:px-16">
 			<div className="flex gap-4">
 				<Subheading />
 			</div>
