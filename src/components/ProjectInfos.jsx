@@ -31,7 +31,7 @@ export default function ProjectInfos({
 			initial="hidden"
 			animate={scrollYProgress > 0.3 ? "show" : null}
 			custom={custom}
-			className={` text-white max-w-[80%] h-auto flex flex-col gap-4 sm:items-center lg:items-stretch sm:text-center lg:text-left	lg:flex-row ${
+			className={`text-white max-w-[80%] h-auto flex flex-col gap-4 sm:items-center lg:items-stretch sm:text-center lg:text-left	lg:flex-row ${
 				justifyEnd && rowReverse
 					? "md:justify-self-end lg:flex-row-reverse"
 					: null

@@ -17,7 +17,7 @@ const processesData = [
 	},
 	{
 		src: "/code-img.jpg",
-		processName: "Code",
+		processName: "Código",
 		icon: (
 			<div className="flex gap-2">
 				<SiTailwindcss className="fill-[hsl(183.1,74.88%,40.59%)]" />
@@ -29,7 +29,7 @@ const processesData = [
 
 export default function OurProcessContainer() {
 	return (
-		<section className="relative w-[100dvw] min-h-auto bg-black space-y-20">
+		<section className=" relative max-w-[100dvw] min-h-auto bg-black space-y-20">
 			<Light className="absolute top-[-30%] right-[-10%] md:top-[-50%] md:left-[-70%] lg:left-[-20%] z-40" />
 			<h2 className="relative z-50 text-[clamp(2rem,6vw,3rem)] text-white text-center font-bold uppercase">
 				Nós fazemos tudo! ✨
