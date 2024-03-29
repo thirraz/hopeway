@@ -11,9 +11,13 @@ export default function HeroText({ opacity }) {
 				Aumente seus resultados <br />
 				Com a HopeWay
 			</h1>
-			<p className="font-thin max-w-[70%] mb-4 md:mb-0">
-				A HopeWay fornece o design, o texto que fará você vender mais, e o
-				código. Tudo por um ótimo preço!
+			<p className="font-thin max-w-[55%] mb-4 md:mb-0">
+				Precisa de uma{" "}
+				<span className="text-orange-300 font-bold">Landing Page</span>, um
+				site para divulgar seu produto{" "}
+				<span className="text-red-400 font-bold">SaSS</span> ou seu próprio{" "}
+				<span className="text-green-400 font-bold">e-commerce</span>? A
+				HopeWay consegue ajudá-lo com isso!
 			</p>
 			<CTA />
 		</motion.div>
