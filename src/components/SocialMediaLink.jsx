@@ -1,12 +1,15 @@
-export default function Link({ Icon, link, linkTitle }) {
+import { twMerge } from "tailwind-merge"
+
+export default function Link({ Icon, link, linkTitle, className }) {
 	return (
-		<li className="social-link cursor-pointer">
+		<li
+			className={twMerge("social-link cursor-pointer text-white", className)}
+		>
 			{Icon}
 			<a
 				// href="https://twitter.com/hopewaydesign"
 				href={link}
 				target="_blank"
-				className="text-white"
 			>
 				{linkTitle}
 			</a>
