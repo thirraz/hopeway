@@ -25,7 +25,7 @@ export default function SocialLinks() {
 			<SocialMediaLink
 				Icon={<ImWhatsapp className="fill-green-900 w-7 h-7" />}
 				linkTitle="WhatsApp"
-				link="https://wa.me/15551234567?text=Olá!%20Tenho%20interesse%20em%20aumentar%20meus%20lucros%20com%20um%20belo%20site!%20Pode%20me%20ajudar?"
+				link="https://wa.me/5511993985592?text=Olá!%20Tenho%20interesse%20em%20aumentar%20meus%20lucros%20com%20um%20belo%20site!%20Pode%20me%20ajudar?"
 				className="font-semibold bg-green-300 text-green-900 hover:bg-green-500"
 			/>
 		</ul>
