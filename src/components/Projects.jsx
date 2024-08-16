@@ -14,7 +14,7 @@ const projectsData = [
 		projectName: "Desert Global",
 		projectDescription:
 			"Você precisa de peças para o seu carro, ou alguma ferramenta para consertá-lo? A Desert Global tem isso e muito mais!",
-		link: "https://fantastic-longma-18b9b1.netlify.app/"
+		link: "https://desertglobal.netlify.app/"
 	},
 	{
 		projectCover: "/nexter.jpg",
